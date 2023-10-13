@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="main">
+			<div class="main__appointment appointment">
+				<div class="appointment__container">
+					<h2 class="appointment__title">
+						Make an appointment
+					</h2>
+					<form class="appointment__form form-appointment" action="">
+						<div class="form-appointment__items">
+							<div class="form-appointment__item"><input class="form-appointment__input" required autocomplete="off" placeholder="Name" name="name" type="text"></div>
+							<div class="form-appointment__item"><input class="form-appointment__input" required autocomplete="off" placeholder="Email" name="email" type="email"></div>
+							<div class="form-appointment__item"><input class="form-appointment__input" required autocomplete="off" placeholder="Phone Number" name="tel" type="tel"></div>
+							<div class="form-appointment__item"><input class="form-appointment__input" required autocomplete="off" placeholder="Select Service" name="select" type="text"></div>
+						</div>
+						<div class="form-appointment__comment"><textarea class="form-appointment__textarea" placeholder="Tell us about your puppers include his/her name" name="comment" id=""></textarea></div>
+						<button class="form-appointment__btn" type="submit">Make an Appointment</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="main__summary summary">
+				<div class="summary__container">
+					<form class="summary__form form-summary" action="#">
+						<h3 class="form-summary__title">
+							Summary
+						</h3>
+						<div class="form-summary__list">
+							Estimate Shipping and Tax
+						</div>
+						<p class="form-summary__text">
+							Enter your destination to get a shipping estimate.
+						</p>
+						<div class="form-summary__body">
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="country">Country</label>
+								<input class="form-summary__input form-summary__input_australia" placeholder="Australia" id="country" type="text" name="country">
+							</div>
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="state">State/Province</label>
+								<input class="form-summary__input" id="state" type="text" name="state">
+							</div>
+							<div class="form-summary__line">
+								<label class="form-summary__label" for="zip">Zip/Postal Code</label>
+								<input class="form-summary__input" id="zip" type="text" name="zip">
+							</div>
+						</div>
+						<div class="form-summary__radio-btn radio-btn">
+							<p class="radio-btn__title">Standard Rate</p>
+							<div class="radio-btn__item">
+								<input class="radio-btn__input" required id="standart" type="radio" name="delivery" value="standart">
+								<label class="radio-btn__label" for="standart">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+							</div>
+							<p class="radio-btn__title">Pickup from store</p>
+							<div class="radio-btn__item">
+								<input class="radio-btn__input" required id="pickup" type="radio" name="delivery" value="pickup">
+								<label class="radio-btn__label" for="pickup">1234 Street Adress City Address, 1234 $0.00</label>
+							</div>
+						</div>
+						<div class="summary__checklist">
+							Apply Discount Code
+						</div>
+						<div class="form-summary__line form-summary__line_margin-19">
+							<label class="form-summary__label" for="discountcode">Enter discount code</label>
+							<input class="form-summary__input form-summary__input_placeholder-gray" placeholder="Enter Discount code" id="discountcode" type="text" name="discountcode">
+						</div>
+						<button class="form-summary__btn" type="submit">Apply Discount</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="registered">
+				<div class="registered__container">
+					<h2 class="registered__title">
+						Registered Customers
+					</h2>
+					<p class="registered__text">
+						If you have an account, sign in with your email address.
+					</p>
+					<form class="registered__form form-registered" action="">
+						<div class="form-registered__body">
+							<div class="form-registered__line">
+								<label class="form-registered__label" for="">Email <span class="form-registered__star">*</span></label>
+								<input class="form-registered__input" id="" placeholder="Your Name" type="text">
+							</div>
+							<div class="form-registered__line">
+								<label class="form-registered__label" for="">Password <span class="form-registered__star">*</span></label>
+								<input class="form-registered__input" id="" placeholder="Your Password" type="text">
+							</div>
+						</div>
+						<div class="form-registered__footer">
+							<button class="form-registered__btn" type="submit">Sign In</button>
+							<a class="form-registered__link" href="">Forgot Your Password?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
